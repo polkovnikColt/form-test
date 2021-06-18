@@ -1,0 +1,41 @@
+@mixin label {
+  font-style: normal;
+  cursor: pointer;
+}
+
+.label {
+  width: auto;
+  margin: 0 2px;
+
+  &-common {
+    @include label;
+    color: $dark-blue;
+  }
+
+  &-link {
+    @include label;
+    text-decoration: none;
+    color: $blue;
+
+    &:hover {
+      color: $blue-hover;
+    }
+
+    &:active {
+      color: $blue-hover;
+
+    }
+  }
+
+  &-small {
+    font-size: 16px;
+    font-weight: 400;
+  }
+
+  &-medium {
+    font-size: 24px;
+    font-weight: 500;
+  }
+
+}
+

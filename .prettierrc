@@ -1,0 +1,11 @@
+{
+  "tabWidth": 2,
+  "bracketSpacing": true,
+  "endOfLine": "auto",
+  "filepath": "src/*/*.tsx",
+  "printWidth": 80,
+  "semi": true,
+  "useTabs": true,
+  "trailingComma": "all",
+  "singleQuote": true
+}

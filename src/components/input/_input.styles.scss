@@ -1,0 +1,28 @@
+
+.input {
+  @include avoid-outline;
+  font-family: $main-font;
+  border-radius: 4px;
+  box-sizing: border-box;
+  cursor: pointer;
+  padding: 8px 11px;
+  margin: 12px 0;
+  height: 2.5rem;
+  border: solid 1px $light-grey;
+
+  &:focus {
+    border: 1px solid $blue-focus;
+  }
+}
+
+.input-error {
+  &:focus {
+    border: 1px solid $red;
+  }
+}
+
+.error {
+  font-size: 12px;
+  font-weight: 400;
+  color: $red;
+}

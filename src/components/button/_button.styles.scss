@@ -1,0 +1,40 @@
+
+@mixin button {
+  position: relative;
+  font-family: $main-font;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 24px;
+  border-radius: 3px;
+  border: none;
+  cursor: pointer;
+}
+
+.common {
+  @include button;
+  background-color: $green-primary;
+  color: $white;
+  padding: 12px 92px;
+
+  &:hover {
+    background-color: $green-primary-hover;
+  }
+}
+
+.icon {
+  @include button;
+  border: solid 1px $light-grey;
+  background-color: $white;
+  padding: 12px 0 12px 52px;
+  color: $blue;
+  display: flex;
+  flex-wrap: nowrap;
+  &:hover {
+    color: $blue-hover;
+  }
+}
+
+.button-icon {
+  position: absolute;
+  left: 13px;
+}

@@ -1,0 +1,18 @@
+@import "styles/global.styles";
+@import "styles/variables.styles";
+@import "components/card/card.styles";
+@import "components/button/button.styles";
+@import "components/label/labels.styles";
+@import "components/input/input.styles";
+@import "components/checkbox/checkbox.styles";
+@import "components/divider/divider.styles";
+@import "pages/login/login.styles";
+
+html, body {
+  font-family: $main-font;
+  background-color: $main-background;
+}
+
+.page {
+  height: 97vh;
+}
